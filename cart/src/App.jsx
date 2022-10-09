@@ -3,20 +3,18 @@ import ReactDOM from "react-dom";
 
 import "./index.scss";
 
-import { login, jwt } from "cart/cart";
+import Header from "home/Header";
+import Footer from "home/Footer";
+import CartContent from "./CartContent";
 
 const App = () => {
-  const [currentJWT, setCurrentJWT] = React.useState(jwt.value);
-
-  React.useEffect(() => {
-    jwt.subscribe(setCurrentJWT);
-
-    login("sally", "123");
-  }, []);
-
   return (
-    <div className="mt-10 text-3xl mx-auto max-w-6xl">
-      <div>JWT: {currentJWT}</div>
+    <div className="mx-auto max-w-6xl">
+      <Header />
+      <div className="my-10">
+        <CartContent />
+      </div>
+      <Footer />
     </div>
   );
 };
