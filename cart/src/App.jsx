@@ -8,6 +8,7 @@ import Header from "home/Header";
 import Footer from "home/Footer";
 import CartContent from "./CartContent";
 import Login from "./Login";
+import MiniCart from "./MiniCart";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
       <div className="my-10">
         <CartContent />
         <Login />
+        <MiniCart />
       </div>
       <Footer />
     </div>
