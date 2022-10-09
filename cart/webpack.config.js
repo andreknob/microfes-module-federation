@@ -50,6 +50,7 @@ module.exports = {
       },
       exposes: {
         "./cart": "./src/cart.js",
+        "./Login": "./src/Login.jsx",
       },
       shared: {
         ...deps,
